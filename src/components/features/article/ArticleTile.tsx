@@ -10,7 +10,7 @@ import { PageBlogPostFieldsFragment } from '@src/lib/__generated/sdk';
 
 interface ArticleTileProps extends HTMLProps<HTMLDivElement> {
   article: PageBlogPostFieldsFragment,
-  className: String
+  className: string
 }
 
 export const ArticleTile = ({ article, className }: ArticleTileProps) => {
