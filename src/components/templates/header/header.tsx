@@ -11,6 +11,7 @@ export const Header = () => {
   return (
     <header className="py-5">
       <nav>
+        <h1>test h1</h1>
         <Container className="flex items-center justify-between">
           <Link href="/" title={t('common.homepage')}>
             <BlogLogo />
