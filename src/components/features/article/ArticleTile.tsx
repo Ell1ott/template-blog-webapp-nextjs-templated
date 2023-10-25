@@ -9,7 +9,8 @@ import { FormatDate } from '@src/components/shared/format-date';
 import { PageBlogPostFieldsFragment } from '@src/lib/__generated/sdk';
 
 interface ArticleTileProps extends HTMLProps<HTMLDivElement> {
-  article: PageBlogPostFieldsFragment;
+  article: PageBlogPostFieldsFragment,
+  className: String
 }
 
 export const ArticleTile = ({ article, className }: ArticleTileProps) => {
@@ -18,6 +19,7 @@ export const ArticleTile = ({ article, className }: ArticleTileProps) => {
 
   return (
     <Link className="flex flex-col" href={`/${article.slug}`}>
+      <h1>another test change</h1>
       <div
         className={twMerge(
           'flex flex-1 flex-col overflow-hidden rounded-2xl border border-gray300 shadow-lg',
